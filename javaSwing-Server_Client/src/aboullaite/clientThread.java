@@ -18,6 +18,7 @@ import java.net.Socket;
 
 
 // For every client's connection we call this class
+// 모든 client의 연결은 이 클래스를 호출한다.
 public class clientThread extends Thread{
      private String clientName = null;
   private DataInputStream is = null;
@@ -39,6 +40,7 @@ public class clientThread extends Thread{
     try {
       /*
        * Create input and output streams for this client.
+       * 이 client에서 사용할 입력 출력 stream들을 만든다
        */
       is = new DataInputStream(clientSocket.getInputStream());
       os = new PrintStream(clientSocket.getOutputStream());
