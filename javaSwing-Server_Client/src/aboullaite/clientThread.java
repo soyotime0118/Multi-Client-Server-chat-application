@@ -144,8 +144,7 @@ public class clientThread extends Thread {
 
 			/*
 			 * Clean up. Set the current thread variable to null so that a new
-			 * client could be accepted by the server.
-			 * 현재 thread변수를 null로 설정한다
+			 * client could be accepted by the server. 현재 thread변수를 null로 설정한다
 			 */
 			synchronized (this) {
 				for (int i = 0; i < maxClientsCount; i++) {
@@ -156,8 +155,7 @@ public class clientThread extends Thread {
 			}
 			/*
 			 * Close the output stream, close the input stream, close the
-			 * socket.
-			 * socket, inputStream과 outputStream을 모두 닫는다
+			 * socket. socket, inputStream과 outputStream을 모두 닫는다
 			 */
 			is.close();
 			os.close();
