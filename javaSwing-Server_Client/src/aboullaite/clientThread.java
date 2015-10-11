@@ -27,6 +27,13 @@ public class clientThread extends Thread {
 	private final clientThread[] threads;
 	private int maxClientsCount;
 
+	/**
+	 * 
+	 * @param clientSocket
+	 *            채팅 text 전송에 사용할 clientSocket
+	 * @param threads
+	 *            다른 clientThread가 모여있는 thread 배열
+	 */
 	public clientThread(Socket clientSocket, clientThread[] threads) {
 		this.clientSocket = clientSocket;
 		this.threads = threads;
